@@ -1,0 +1,96 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.FormTableContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+.headContainer {
+  font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  
+  .headContainer {
+    font-size: 16px;
+  }
+
+  .FormTableContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .FormTableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .tableContainer {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+  
+  .headContainer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .headContainer {
+    font-size: 16px;
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-self: flex-start;
+}
+
+@media (min-width: 1001px) {
+  .formField{
+    margin-left: 0;
+  }
+}
+
+.sortButton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  background-color: beige;
+  height: 40px;
+  font-size: 20px;
+  padding: 0;
+  border: 0px;
+}

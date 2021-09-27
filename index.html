@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body id="body">
+  <div id="optionalBlock" style="display: none;"></div>
+  <button id="sorting" class="sortButton">Sort by name / reset</button>
+
+  <div class="FormTableContainer">
+    <div id="root" class="tableContainer"></div>
+    
+    <form method="POST" id="addUser" class="formField">
+
+      <label>
+        <p>Name:</p>
+        <input type="text" name="name"/>
+      </label>
+
+      <label>
+        <p>Username:</p>
+        <input type="text" name="username"/>
+      </label>
+
+      <label>
+        <p>Email:</p>
+        <input type="email" name="email"/>
+      </label>
+
+      <label>
+        <p>Website:</p>
+        <input type="text" name="website"/>
+      </label>
+      
+      <button type="submit">Add user</button>
+    </form>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
