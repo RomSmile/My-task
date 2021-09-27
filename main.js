@@ -77,7 +77,7 @@ async function get() {
             <td class="headContainer container">Website</td>
           </tr>
           ${Users.map(user => `
-            <tr class="topic" id="${user.id}">
+            <tr class="topic" id="${}">
               <td class="container">${user.name}</td>
               <td class="container">${user.username}</td>
               <td class="container">${user.email}</td>
